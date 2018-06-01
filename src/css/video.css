@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+.video {
+  width: 790px;
+  height: 395px;
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  margin: auto;
+  margin-top: 20px;
+  padding: 9px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px grey;
+  transition: all 1s ease-in-out;
+}
+.video:hover {
+  transform: scale(1.1);
+}
+iframe {
+  border: none;
+}
+.details {
+  padding: 20px;
+  margin-top: 40px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+hr {
+  width: 200px;
+  margin: auto;
+  height: 3px;
+  /* background: linear-gradient(to top, #c9d6ff, #e2e2e2); */
+  background: #fe0;
+  border: none;
+}
