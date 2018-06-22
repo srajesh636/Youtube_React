@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Alex+Brush");
 .App {
   text-align: center;
 }
@@ -20,4 +21,32 @@
 
 .App-intro {
   font-size: large;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+      font-family: 'Alex Brush', cursive;
+}
+
+li {
+    float: left;
+    float: left;
+    padding-left: 12px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
