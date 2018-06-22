@@ -21,7 +21,7 @@ export default class List extends Component {
     });
     return (
       <div>
-        <h2>Suggestion</h2>
+        <h2 className='suggestions'>Suggestion</h2>
         <hr />
         <div className="list">{video}</div>
       </div>

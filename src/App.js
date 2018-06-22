@@ -41,12 +41,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
+
+
+
         <Search keyword={this.term} />
         <br />
         <Video data={this.state.selected} />
         <br />
         <br />
-        <List data={this.state.youtube_data} vid={this.video} />
+        {this.state.selected == "" ? (
+          <div />
+        ) : (
+          <div>
+            {" "}
+            <hr /> <List data={this.state.youtube_data} vid={this.video} />
+            >
+          </div>
+        )}
       </div>
     );
   }

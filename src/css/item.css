@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
 .item {
   width: 300px;
   height: 350px;
@@ -8,6 +9,7 @@
   margin-bottom: 40px;
   margin-left: 20px;
   transition: all 2s ease-in-out;
+    font-family: "Open Sans Condensed", sans-serif;
 }
 .item :hover {
   transform: scale(1.1);
@@ -23,7 +25,7 @@
   transition: all 1s ease-in-out;
   box-shadow: 0px 3px 9px grey;
   /* background-color: #eeeeeec4; */
-  background: #eee;
+background:#eeeeee8c;
   text-align: center;
 }
 .description {
@@ -33,7 +35,7 @@
 }
 .button {
   border-radius: 4px;
-  background-color: #ffee00d4;
+  background-color: #eee;
   border: none;
 
   text-align: center;
@@ -55,5 +57,8 @@ h2 {
   text-align: center;
 }
 iframe {
-  pointer-events: none;
+
+}
+.suggestions{
+  font-family: "Open Sans Condensed", sans-serif;
 }

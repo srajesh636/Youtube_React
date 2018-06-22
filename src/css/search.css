@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Alex+Brush");
 input {
-  font-size: 46px !important;
+  font-size: 32px !important;
   margin-top: 40px;
   padding: 10px;
   width: 300px;
@@ -9,14 +10,8 @@ input {
   border: none;
   font-size: 24px;
   text-align: center;
-  font-family: "beacon";
-}
-
-hr {
-  width: 200px;
-  margin: auto;
-  height: 3px;
-  /* background: linear-gradient(to top, #c9d6ff, #e2e2e2); */
-  background: #fe0;
-  border: none;
+  font-family: 'Alex Brush', cursive;
+      background-color: #f1f1f191;
+      font-weight: bold;
+    color: #000000d4;
 }

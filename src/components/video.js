@@ -18,7 +18,7 @@ export default class Video extends Component {
 
         <div className="details">{details.title}</div>
 
-        <hr />
+      
       </div>
     );
   }
