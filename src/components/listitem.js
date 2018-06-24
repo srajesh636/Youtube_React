@@ -7,15 +7,17 @@ class ListItem extends React.Component {
 
     let url = "https://www.youtube.com/embed/" + this.props.data.id.videoId;
 
-    return (
-      <div className="item">
-        <iframe width="300" height="250" src={url} />
-        <div className="description">
-          <button onClick={this.props.getindex} class="button">
-            play
-          </button>
-        </div>
-      </div>
+    return (<div className="card" onClick={this.props.getindex} >
+    <img src={image} className='card-image' />
+    <div className="card-title">
+      {snippet.title}
+
+
+    </div>
+    <div className="youtube-logo">  <i className="fa fa-youtube" aria-hidden="true"></i></div>
+
+    </div>
+
     );
   }
 }
