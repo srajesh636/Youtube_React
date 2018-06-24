@@ -4,7 +4,7 @@ export default class Video extends Component {
   render() {
     let data = this.props.data.id || { main: "" };
     let details = this.props.data.snippet || { main: "" };
-    console.log(details);
+    // console.log(details);
     let url =
       "https://www.youtube.com/embed/" +
       data.videoId +
@@ -18,7 +18,7 @@ export default class Video extends Component {
 
         <div className="details">{details.title}</div>
 
-      
+
       </div>
     );
   }

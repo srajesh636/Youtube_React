@@ -14,7 +14,8 @@ class App extends Component {
     this.state = {
       keyword: "",
       youtube_data: [],
-      selected: []
+      selected: [],
+
     };
   }
   term = data => {
@@ -39,6 +40,7 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.state.youtube_data);
     return (
       <div className="App">
         <ul>
