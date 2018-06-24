@@ -42,12 +42,15 @@ hr {
 @media  screen and (max-width:500px){
   .video
   {
-    width: 280px !important;
-    height:180px !important;
+    width: 300px !important;
+    height:280px !important;
+    padding: 4px;
   }
   .iframe-video{
-    width: 280px;
-    height: 180px;
+    width: 300px;
+    height: 280px;
+    border-radius: 7px;
+
   }
 
   .details {

@@ -118,15 +118,15 @@ color: rgba(0, 0, 0, 0.94);
 
   }
   .card{
-    width:200px;
-    height:280px;
+    width:280px;
+    height:340px;
 
     margin-bottom:40px;
 
   }
   .card-image{
 
-  width:200px;
+  width:280px;
   height:188px;
   background-size: cover;
 
@@ -135,7 +135,7 @@ color: rgba(0, 0, 0, 0.94);
   }
   .card-title{
 
-  font-size: 10px;
+  font-size: 14px;
 
 
   }
@@ -143,9 +143,10 @@ color: rgba(0, 0, 0, 0.94);
     display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 3px;
-  padding-right: 9px;
-  padding-bottom: 10px;
+
+  padding-right: 16px;
+padding-top: 42px;
+
   font-size: 27px;
   color: rgba(0, 0, 0, 0.94);
   }
