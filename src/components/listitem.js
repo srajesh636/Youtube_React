@@ -3,7 +3,13 @@ import "../css/item.css";
 import 'font-awesome/css/font-awesome.min.css';
 class ListItem extends React.Component {
   render() {
-    let data = this.props.data.id.snippet || { main: "" };
+
+    let data = this.props.data.id.snippet || undefined;
+    let snippet=this.props.data.snippet;
+
+    let image=snippet.thumbnails.medium.url;
+
+
 
     let url = "https://www.youtube.com/embed/" + this.props.data.id.videoId;
 
@@ -23,3 +29,12 @@ class ListItem extends React.Component {
 }
 
 export default ListItem;
+
+// <div className="item">
+//   <iframe width="300" height="250" src={url} />
+//   <div className="description">
+//     <button onClick={this.props.getindex} class="button">
+//       play
+//     </button>
+//   </div>
+// </div>
