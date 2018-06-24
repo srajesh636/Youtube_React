@@ -108,3 +108,48 @@ padding: 11px;
 font-size: 33px;
 color: rgba(0, 0, 0, 0.94);
 }
+
+@media  screen and (max-width:500px){
+  .list {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto ;
+    margin-bottom: 10px;
+
+  }
+  .card{
+    width:200px;
+    height:280px;
+
+    margin-bottom:40px;
+
+  }
+  .card-image{
+
+  width:200px;
+  height:188px;
+  background-size: cover;
+
+
+
+  }
+  .card-title{
+
+  font-size: 10px;
+
+
+  }
+  .youtube-logo{
+    display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 3px;
+  padding-right: 9px;
+  padding-bottom: 10px;
+  font-size: 27px;
+  color: rgba(0, 0, 0, 0.94);
+  }
+
+
+
+}

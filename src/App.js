@@ -59,7 +59,7 @@ class App extends Component {
           <div>
             {" "}
           <List data={this.state.youtube_data} vid={this.video} />
-            >
+            
           </div>
         )}
       </div>

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+
+
 .video {
   width: 790px;
   height: 395px;
@@ -14,6 +16,7 @@
 .video:hover {
   transform: scale(1.1);
 }
+
 iframe {
   border: none;
 }
@@ -32,4 +35,32 @@ hr {
   /* background: linear-gradient(to top, #c9d6ff, #e2e2e2); */
   background: rgba(0,0,0,0.7);;
   border: none;
+}
+
+
+/* adding media quries for respnsiveness */
+@media  screen and (max-width:500px){
+  .video
+  {
+    width: 280px !important;
+    height:180px !important;
+  }
+  .iframe-video{
+    width: 280px;
+    height: 180px;
+  }
+
+  .details {
+    padding: 20px;
+    margin-top: 40px;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  hr{
+    width: 100px;
+  }
+
+
+
 }
