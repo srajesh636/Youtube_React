@@ -15,3 +15,15 @@ input {
       font-weight: bold;
     color: #000000d4;
 }
+
+@media  screen and (max-width:500px){
+
+input{
+  width:190px;
+  height:25px;
+  font-size: 22px;
+}
+
+
+
+}

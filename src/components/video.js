@@ -13,7 +13,7 @@ export default class Video extends Component {
     return (
       <div className="main">
         <div className="video">
-          <iframe width="792" height="395" src={url} />
+          <iframe width="792" height="395" className="iframe-video" src={url} />
         </div>
 
         <div className="details">{details.title}</div>
