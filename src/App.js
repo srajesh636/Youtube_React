@@ -6,7 +6,7 @@ import YTSearch from "youtube-api-search";
 
 import "./css/App.css";
 
-const api_key = "AIzaSyBCBi6LtHdcK_2vnM5QA9N479kTX0Q0nQw";
+const api_key = "Your api key";
 
 class App extends Component {
   constructor(props) {
