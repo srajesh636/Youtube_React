@@ -20,8 +20,19 @@ input {
 
 input{
   width:190px;
-  height:25px;
+  height:16px;
   font-size: 22px;
+}
+
+
+
+}
+@media  screen and (max-width:700px){
+
+input{
+  width:190px;
+  height:25px;
+  font-size: 17px;
 }
 
 

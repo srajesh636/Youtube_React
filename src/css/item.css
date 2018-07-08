@@ -118,15 +118,15 @@ color: rgba(0, 0, 0, 0.94);
 
   }
   .card{
-    width:280px;
-    height:340px;
+    width:200px;
+    height:280px;
 
     margin-bottom:40px;
 
   }
   .card-image{
 
-  width:280px;
+  width:200px;
   height:188px;
   background-size: cover;
 
@@ -135,7 +135,7 @@ color: rgba(0, 0, 0, 0.94);
   }
   .card-title{
 
-  font-size: 14px;
+  font-size: 10px;
 
 
   }
@@ -143,14 +143,60 @@ color: rgba(0, 0, 0, 0.94);
     display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-
-  padding-right: 16px;
-padding-top: 42px;
-
+  padding: 3px;
+  padding-right: 9px;
+  padding-bottom: 10px;
   font-size: 27px;
   color: rgba(0, 0, 0, 0.94);
   }
 
+
+
+}
+
+@media  screen and (max-width:600px){
+
+  .list {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto ;
+    margin-bottom: 10px;
+    padding:20px;
+
+  }
+  .card{
+    width:200px;
+    height:280px;
+
+    margin-bottom:40px;
+    margin-right: 10px;
+
+  }
+  .card-image{
+
+  width:200px;
+  height:188px;
+  background-size: cover;
+
+
+
+  }
+  .card-title{
+
+  font-size: 10px;
+
+
+  }
+  .youtube-logo{
+    display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 3px;
+  padding-right: 9px;
+  padding-bottom: 10px;
+  font-size: 27px;
+  color: rgba(0, 0, 0, 0.94);
+  }
 
 
 }

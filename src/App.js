@@ -3,10 +3,9 @@ import List from "./components/list";
 import Video from "./components/video";
 import Search from "./components/search";
 import YTSearch from "youtube-api-search";
-
 import "./css/App.css";
 
-const api_key = "AIzaSyBCBi6LtHdcK_2vnM5QA9N479kTX0Q0nQw";
+const API_KEY = "AIzaSyAB39Nb3scDHEEmx8r0IE4a6dVxkEk9KmA";
 
 class App extends Component {
   constructor(props) {
@@ -14,52 +13,46 @@ class App extends Component {
     this.state = {
       keyword: "",
       youtube_data: [],
-      selected: [],
-
+      selectedVideo: []
     };
   }
-  term = data => {
-    YTSearch(
-      {
-        key: api_key,
-        term: data
-      },
-      data => {
-        this.setState({
-          youtube_data: data,
-          selected: data[0]
-        });
-      }
-    );
-  };
 
-  video = data => {
-    this.setState({
-      selected: this.state.youtube_data[data]
-    });
+  setKeyword = keyword => {
+    fetch(
+      `https://www.googleapis.com/youtube/v3/search?q=${keyword}&part=snippet&key=${API_KEY}&maxResults=17`
+    )
+      .then(result => result.json())
+      .then(data =>
+        this.setState({
+          youtube_data: data.items,
+          selectedVideo: data.items[0]
+        })
+      );
+  };
+  currentVideo = data => {
+    this.setState({ selectedVideo: this.state.youtube_data[data] });
   };
 
   render() {
-    console.log(this.state.youtube_data);
     return (
       <div className="App">
         <ul>
-  <li>Videora</li>
-
-</ul>
-
-        <Search keyword={this.term} />
+          <li>Videora</li>
+        </ul>
+        <Search setKeyword={this.setKeyword} />
         <br />
-        <Video data={this.state.selected} />
+        <Video data={this.state.selectedVideo} />
         <br />
-        <br />
-        {this.state.selected == "" ? (
+        <br />{" "}
+        {this.state.selectedVideo == "" ? (
           <div />
         ) : (
           <div>
             {" "}
-          <List data={this.state.youtube_data} vid={this.video} />
-            
+            <List
+              data={this.state.youtube_data}
+              currentVideo={this.currentVideo}
+            />
           </div>
         )}
       </div>

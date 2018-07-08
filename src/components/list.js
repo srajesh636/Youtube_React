@@ -4,8 +4,8 @@ import "../css/item.css";
 
 export default class List extends Component {
   show = data => {
-    this.props.vid(data);
-    window.scrollBy(0,-1100);
+    this.props.currentVideo(data);
+    window.scrollTo(0, 80);
   };
 
   render() {
@@ -23,7 +23,7 @@ export default class List extends Component {
     });
     return (
       <div>
-        <h2 className='suggestions'>Suggestion</h2>
+        <h2 className="suggestions">Suggestion</h2>
         <hr />
         <div className="list">{video}</div>
       </div>
