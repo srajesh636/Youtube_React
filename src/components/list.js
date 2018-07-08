@@ -5,7 +5,7 @@ import "../css/item.css";
 export default class List extends Component {
   show = data => {
     this.props.currentVideo(data);
-    window.scrollTo(0, 80);
+    window.scrollTo(0, 70);
   };
 
   render() {
