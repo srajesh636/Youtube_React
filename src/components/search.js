@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "../css/search.css";
 export default class Search extends Component {
-  onChange = e => {
-    this.props.keyword(e.target.value);
+  onChangeHandler = e => {
+    this.props.setKeyword(e.target.value);
   };
 
   render() {
@@ -10,7 +10,7 @@ export default class Search extends Component {
       <div>
         <input
           type="text"
-          onChange={this.onChange}
+          onChange={this.onChangeHandler}
           placeholder="Enter here .."
         />
         <hr id="search_hr" />

@@ -1,40 +1,26 @@
 import React from "react";
 import "../css/item.css";
-import 'font-awesome/css/font-awesome.min.css';
+import "font-awesome/css/font-awesome.min.css";
 class ListItem extends React.Component {
   render() {
-
     let data = this.props.data.id.snippet || undefined;
-    let snippet=this.props.data.snippet;
+    let snippet = this.props.data.snippet;
+    let image = snippet.thumbnails.medium.url;
+    let baseURL = "https://www.youtube.com/embed/";
 
-    let image=snippet.thumbnails.medium.url;
+    let url = baseURL + this.props.data.id.videoId;
 
-
-
-    let url = "https://www.youtube.com/embed/" + this.props.data.id.videoId;
-
-    return (<div className="card" onClick={this.props.getindex} >
-    <img src={image} className='card-image' />
-    <div className="card-title">
-      {snippet.title}
-
-
-    </div>
-    <div className="youtube-logo">  <i className="fa fa-youtube" aria-hidden="true"></i></div>
-
-    </div>
-
+    return (
+      <div className="card" onClick={this.props.getindex}>
+        <img src={image} className="card-image" />
+        <div className="card-title">{snippet.title}</div>
+        <div className="youtube-logo">
+          {" "}
+          <i className="fa fa-youtube" aria-hidden="true" />
+        </div>
+      </div>
     );
   }
 }
 
 export default ListItem;
-
-// <div className="item">
-//   <iframe width="300" height="250" src={url} />
-//   <div className="description">
-//     <button onClick={this.props.getindex} class="button">
-//       play
-//     </button>
-//   </div>
-// </div>
