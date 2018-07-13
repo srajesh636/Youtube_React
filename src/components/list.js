@@ -1,12 +1,19 @@
 import React, { Component } from "react";
 import ListItem from "./listitem";
 import "../css/item.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default class List extends Component {
   show = data => {
     this.props.currentVideo(data);
     window.scrollTo(0, 70);
   };
+  componentDidMount(){
+    AOS.init({
+      duration : 2000
+    })
+  }
 
   render() {
     let data = this.props.data || { main: "" };
@@ -22,10 +29,10 @@ export default class List extends Component {
       );
     });
     return (
-      <div>
+      <div data-aos="zoom-in">
         <h2 className="suggestions">Suggestion</h2>
         <hr />
-        <div className="list">{video}</div>
+        <div className="list" >{video}</div>
       </div>
     );
   }

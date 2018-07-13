@@ -11,7 +11,7 @@ class ListItem extends React.Component {
     let url = baseURL + this.props.data.id.videoId;
 
     return (
-      <div className="card" onClick={this.props.getindex}>
+      <div className="card" onClick={this.props.getindex} data-aos='fade-up'>
         <img src={image} className="card-image" />
         <div className="card-title">{snippet.title}</div>
         <div className="youtube-logo">
