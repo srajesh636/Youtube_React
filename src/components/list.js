@@ -30,7 +30,7 @@ export default class List extends Component {
     });
     return (
       <div data-aos="zoom-in">
-        <h2 className="suggestions">Suggestion</h2>
+        <h2 className="suggestions">Suggestions</h2>
         <hr />
         <div className="list" >{video}</div>
       </div>

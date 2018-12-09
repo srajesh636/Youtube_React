@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "aos": "^2.3.3",
+    "firebase": "^5.7.0",
+    "firebase-tools": "^6.1.2",
     "font-awesome": "^4.7.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
