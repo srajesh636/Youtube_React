@@ -1,26 +1,14 @@
-Project Title
-Youtube React
+# Videora
 
-Demo:
+### View Live: http://videora.herokuapp.com
 
-http://videora.herokuapp.com
+<img width="1439" alt="screen shot 2018-12-09 at 4 05 09 pm" src="https://user-images.githubusercontent.com/13884296/49696230-24426a80-fbcd-11e8-8f72-32636e30b243.png">
 
-
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-Prerequisites
 What things you need to install the software and how to install them
 
-
-Installing
-
-
+Installing :
 npm install
 
-
-Running The Server
-
-
+Running The Server:
 npm start
 
